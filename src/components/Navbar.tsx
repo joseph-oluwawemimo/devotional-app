@@ -23,13 +23,9 @@ export const Navbar: React.FC<NavbarProps> = ({ isLaunched }) => {
 
   const navLinks = [
     { label: 'Home', href: '#hero' },
-    { label: 'Why This App', href: '#vision' },
-    { label: 'What’s Inside', href: '#features' },
+    { label: 'Features', href: '#features' },
     { label: 'App UI', href: '#showcase' },
-    { label: 'Management', href: '#upcoming' },
-    { label: 'Visionary', href: '#creator' },
     { label: 'Download', href: '#download' },
-    { label: 'Support', href: '#support' },
   ];
 
   return (

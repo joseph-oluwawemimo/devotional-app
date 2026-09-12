@@ -5,8 +5,8 @@ import { LAUNCH_CONFIG } from '../config/launchConfig';
 export const CreatorSection: React.FC = () => {
   const [photoIndex, setPhotoIndex] = useState(0);
   const photos = [
-    { url: LAUNCH_CONFIG.creator.photoUrl, label: 'Ministry & Leadership' },
-    { url: LAUNCH_CONFIG.creator.ministryPhotoUrl, label: 'Worship & Word' }
+    { url: LAUNCH_CONFIG.creator.photoUrl, label: 'Joseph Akinleye • Visionary' },
+    { url: LAUNCH_CONFIG.creator.ministryPhotoUrl, label: 'Ministry & Word' }
   ];
 
   return (

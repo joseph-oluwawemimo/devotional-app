@@ -2295,3 +2295,447 @@ button, a {
     flex-direction: row;
   }
 }
+
+/* ==========================================================================
+   Creator Section & Signature Quote Styles
+   ========================================================================== */
+.creator-section {
+  background: #f8fafc;
+  border-top: 1px solid #e2e8f0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.creator-card-wrapper {
+  max-width: 1040px;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 28px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 20px 40px -15px rgba(13, 37, 76, 0.08);
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 860px) {
+  .creator-card-wrapper {
+    grid-template-columns: 400px 1fr;
+  }
+}
+
+.creator-image-side {
+  position: relative;
+  min-height: 420px;
+  background: #0d254c;
+  overflow: hidden;
+}
+
+.creator-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 10%;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.creator-card-wrapper:hover .creator-photo {
+  transform: scale(1.03);
+}
+
+.creator-photo-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(6, 21, 45, 0.85) 0%, rgba(6, 21, 45, 0.2) 50%, transparent 100%);
+  display: flex;
+  align-items: flex-end;
+  padding: 1.5rem;
+}
+
+.creator-badge-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.95);
+  color: #0f172a;
+  padding: 5px 12px;
+  border-radius: 9999px;
+  font-size: 12px;
+  font-weight: 700;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.creator-info-side {
+  padding: 2.75rem 2.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.creator-name {
+  font-size: 1.875rem;
+  font-weight: 900;
+  color: #0f172a;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.35rem;
+}
+
+.creator-role {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #2563eb;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 1.25rem;
+}
+
+.creator-bio-text {
+  color: #475569;
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+.creator-quote-box {
+  background: linear-gradient(135deg, #eff6ff 0%, #f8fafc 100%);
+  border-left: 4px solid #2563eb;
+  padding: 1.5rem;
+  border-radius: 0 16px 16px 0;
+  margin-bottom: 1rem;
+}
+
+.quote-lead {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1e3a8a;
+  line-height: 1.45;
+  margin-bottom: 0.5rem;
+}
+
+.quote-explanation {
+  font-size: 0.9375rem;
+  color: #475569;
+  line-height: 1.6;
+}
+
+/* ==========================================================================
+   Comprehensive Mobile Responsiveness System (Phones & Tablets)
+   ========================================================================== */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.landing-page-root {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+@media (max-width: 768px) {
+  /* Container Padding */
+  .container-custom {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  /* Navigation Bar */
+  .site-header {
+    height: auto;
+  }
+
+  .nav-inner-wrapper {
+    height: 4.25rem;
+  }
+
+  .brand-badge {
+    gap: 0.5rem;
+  }
+
+  .brand-logo-container {
+    width: 38px;
+    height: 38px;
+  }
+
+  .brand-title-main {
+    font-size: 1.1rem;
+  }
+
+  .brand-tag-school {
+    font-size: 0.65rem;
+    padding: 1px 5px;
+  }
+
+  .brand-subtitle {
+    font-size: 0.6875rem;
+  }
+
+  .nav-action-cluster {
+    gap: 0.5rem;
+  }
+
+  .nav-cta-btn {
+    padding: 0.45rem 0.85rem;
+    font-size: 0.775rem;
+  }
+
+  /* Hero Section */
+  .hero-section {
+    padding: 2.75rem 0 3.75rem 0;
+  }
+
+  .hero-main-title {
+    font-size: clamp(2rem, 7.5vw, 2.75rem);
+    line-height: 1.15;
+    text-align: center;
+  }
+
+  .hero-description-tag {
+    font-size: 1.125rem;
+    margin-bottom: 0.85rem;
+    text-align: center;
+  }
+
+  .hero-tagline {
+    font-size: 0.95rem;
+    line-height: 1.55;
+    margin-bottom: 1.75rem;
+    text-align: center;
+    padding: 0 0.5rem;
+  }
+
+  /* Countdown Board */
+  .countdown-box {
+    padding: 1rem 0.65rem;
+    border-radius: 18px;
+    margin-bottom: 1.75rem;
+  }
+
+  .countdown-grid {
+    gap: 0.35rem;
+  }
+
+  .time-card {
+    padding: 0.5rem 0.2rem;
+    border-radius: 10px;
+  }
+
+  .time-num {
+    font-size: clamp(1.35rem, 5vw, 1.85rem);
+  }
+
+  .time-label {
+    font-size: 0.55rem;
+  }
+
+  /* Hero Actions */
+  .hero-actions {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.75rem;
+    margin-bottom: 2rem;
+  }
+
+  .btn-primary-launch,
+  .btn-secondary-launch {
+    width: 100%;
+    justify-content: center;
+    padding: 0.85rem 1.25rem;
+    font-size: 0.95rem;
+  }
+
+  /* Hero Phone Mockup Stage */
+  .hero-mockup-stage {
+    padding: 0;
+    margin-top: 0.5rem;
+  }
+
+  .mockup-trio-container {
+    gap: 1.5rem;
+  }
+
+  .phone-device {
+    width: min(290px, calc(100vw - 32px));
+    height: auto;
+    aspect-ratio: 9 / 19.5;
+    border-width: 8px;
+    border-radius: 36px;
+    margin: 0 auto;
+  }
+
+  .side-phone-left,
+  .side-phone-right {
+    display: none !important;
+  }
+
+  /* Sections Common */
+  .section-padding {
+    padding: 3.5rem 0;
+  }
+
+  .section-title {
+    font-size: 1.85rem;
+  }
+
+  .section-subtitle {
+    font-size: 0.95rem;
+    line-height: 1.55;
+  }
+
+  .section-header-centered {
+    margin-bottom: 2.25rem;
+  }
+
+  /* Vision Timeline Cards */
+  .vision-timeline-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .vision-card {
+    padding: 1.5rem 1.25rem;
+  }
+
+  /* Features Grid */
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .feature-card {
+    padding: 1.5rem 1.25rem;
+  }
+
+  /* App UI Showcase */
+  .showcase-tab-bar {
+    display: flex;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    max-width: 100%;
+    padding: 5px 8px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .showcase-tab-bar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .showcase-tab-btn {
+    white-space: nowrap;
+    font-size: 12px;
+    padding: 7px 14px;
+    flex-shrink: 0;
+  }
+
+  .showcase-card-container {
+    padding: 1.5rem 1rem;
+    border-radius: 22px;
+  }
+
+  .showcase-grid-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .showcase-screen-heading {
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .showcase-screen-desc {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1.25rem;
+  }
+
+  .showcase-phone-frame {
+    width: min(270px, calc(100vw - 40px));
+    border-width: 8px;
+    border-radius: 36px;
+  }
+
+  /* Creator Section */
+  .creator-card-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .creator-image-side {
+    height: 360px;
+    min-height: unset;
+  }
+
+  .creator-photo {
+    object-position: center 8%;
+  }
+
+  .creator-info-side {
+    padding: 1.5rem 1.25rem;
+  }
+
+  .creator-name {
+    font-size: 1.5rem;
+  }
+
+  .creator-role {
+    font-size: 0.8125rem;
+  }
+
+  .creator-bio-text {
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .creator-quote-box {
+    padding: 1.25rem 1rem;
+  }
+
+  .quote-lead {
+    font-size: 1.125rem;
+  }
+
+  /* Upcoming Management System & Laptop */
+  .laptop-mockup-wrapper {
+    margin: 1.5rem auto 2.5rem auto;
+  }
+
+  .laptop-frame {
+    border-width: 6px;
+    border-radius: 12px 12px 0 0;
+  }
+
+  .laptop-screen-content {
+    min-height: 260px;
+  }
+
+  .laptop-base {
+    height: 12px;
+    margin: 0 -8px;
+  }
+
+  /* Download Cards */
+  .download-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .download-card {
+    padding: 1.5rem 1.25rem;
+  }
+
+  /* Footer */
+  .site-footer {
+    padding: 3.5rem 0 1.5rem 0;
+  }
+
+  .footer-top-grid {
+    gap: 2rem;
+  }
+}
+

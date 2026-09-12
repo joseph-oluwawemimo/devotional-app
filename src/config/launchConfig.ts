@@ -37,8 +37,8 @@ export const LAUNCH_CONFIG = {
     quote: '“The Word at hand is the Word at heart.”',
     quoteExplanation: 'What stays before us has a greater chance of becoming rooted within us.',
     bio: 'Joseph Akinleye is a young person, minister, and technology enthusiast who has been immensely blessed by the content of the Sunday School and was inspired to transform that experience into a more accessible digital platform.',
-    photoUrl: '/assets/refs/DSC_0089.JPG',
-    ministryPhotoUrl: '/assets/refs/DSC_0090.JPG'
+    photoUrl: '/assets/joseph-akinleye.jpg',
+    ministryPhotoUrl: '/assets/refs/DSC_0089.JPG'
   },
 
   // Management System Upcoming Note
