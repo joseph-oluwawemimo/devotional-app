@@ -38,7 +38,7 @@ export const LAUNCH_CONFIG = {
     quoteExplanation: 'What stays before us has a greater chance of becoming rooted within us.',
     bio: 'Joseph Akinleye is a young person, minister, and technology enthusiast who has been immensely blessed by the content of the Sunday School and was inspired to transform that experience into a more accessible digital platform.',
     photoUrl: '/assets/joseph-akinleye.jpg',
-    ministryPhotoUrl: '/assets/refs/DSC_0089.JPG'
+    ministryPhotoUrl: '/assets/joseph-akinleye-alt.jpg'
   },
 
   // Management System Upcoming Note

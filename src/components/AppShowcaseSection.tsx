@@ -263,7 +263,7 @@ export const AppShowcaseSection: React.FC = () => {
               <div className="showcase-screen-phone-wrapper">
                 <div className="showcase-graphic-card-frame">
                   <img
-                    src="/assets/refs/GOFAMINT-Lesson_2__GOD_DESIGNED_MAN_TO_WORK-1789062602110.png"
+                    src="/assets/screens/lesson-2-card.png"
                     alt="Sunday School Lesson 2 Key Point Card"
                     className="showcase-actual-card-graphic"
                   />

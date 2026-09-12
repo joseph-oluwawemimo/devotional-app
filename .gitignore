@@ -22,3 +22,8 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Raw reference archives (27MB background files, raw camera files)
+public/assets/refs/
+push.ps1
+

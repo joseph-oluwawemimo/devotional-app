@@ -19,7 +19,7 @@ export const LaptopMockup: React.FC = () => {
           <div className="mgmt-app-header">
             <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
               <img
-                src="/assets/refs/Frame 51.png"
+                src="/assets/gofamint-logo-3d.png"
                 alt="GOFAMINT Logo"
                 style={{ width: '22px', height: '22px', objectFit: 'contain' }}
               />
