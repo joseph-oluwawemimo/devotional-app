@@ -4,7 +4,6 @@ import { LAUNCH_CONFIG } from '../config/launchConfig';
 
 interface CountdownTimerProps {
   onStatusChange?: (isLaunched: boolean) => void;
-  forceLaunched?: boolean;
 }
 
 interface TimeRemaining {
@@ -18,13 +17,8 @@ interface TimeRemaining {
 
 export const CountdownTimer: React.FC<CountdownTimerProps> = ({
   onStatusChange,
-  forceLaunched = false
 }) => {
   const calculateTimeRemaining = (): TimeRemaining => {
-    if (forceLaunched) {
-      return { total: 0, days: 0, hours: 0, minutes: 0, seconds: 0, isLaunched: true };
-    }
-
     const launchDate = new Date(LAUNCH_CONFIG.launchTime).getTime();
     const now = new Date().getTime();
     const difference = launchDate - now;
@@ -60,7 +54,7 @@ export const CountdownTimer: React.FC<CountdownTimerProps> = ({
     }, 1000);
 
     return () => clearInterval(timer);
-  }, [forceLaunched]);
+  }, []);
 
   if (timeLeft.isLaunched) {
     return (

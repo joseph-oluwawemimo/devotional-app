@@ -12,8 +12,6 @@ import { ContactSection } from './components/ContactSection';
 import { Footer } from './components/Footer';
 import { LAUNCH_CONFIG } from './config/launchConfig';
 
-import { DevPreviewController } from './components/DevPreviewController';
-
 export const App: React.FC = () => {
   // Check if current system time has passed LAUNCH_CONFIG.launchTime
   const checkRealLaunchStatus = () => {
@@ -21,42 +19,27 @@ export const App: React.FC = () => {
     return Date.now() >= launchTimestamp;
   };
 
-  const [realLaunched, setRealLaunched] = useState(checkRealLaunchStatus());
-  const [forceLaunched, setForceLaunched] = useState(false);
+  const [isLaunched, setIsLaunched] = useState(checkRealLaunchStatus());
 
   // Monitor real-time status as countdown reaches zero
   useEffect(() => {
     const interval = setInterval(() => {
-      setRealLaunched(checkRealLaunchStatus());
+      setIsLaunched(checkRealLaunchStatus());
     }, 1000);
     return () => clearInterval(interval);
   }, []);
 
-  const isEffectiveLaunched = forceLaunched || realLaunched;
-
-  const togglePreviewLaunch = () => {
-    setForceLaunched((prev) => !prev);
-  };
-
   return (
     <div className="landing-page-root">
       {/* Sticky Ultra-Clean Glass Navbar */}
-      <Navbar isLaunched={isEffectiveLaunched} />
-
-      {/* Floating Launch Preview Switcher */}
-      <DevPreviewController
-        isLaunched={isEffectiveLaunched}
-        onTogglePreviewLaunch={togglePreviewLaunch}
-        isPreviewLaunch={forceLaunched}
-      />
+      <Navbar isLaunched={isLaunched} />
 
       {/* Main Page Sections */}
       <main>
         {/* 1. Hero with Countdown & 3-Screen Mockup */}
         <HeroSection
-          isLaunched={isEffectiveLaunched}
-          onLaunchStatusChange={setRealLaunched}
-          forceLaunched={forceLaunched}
+          isLaunched={isLaunched}
+          onLaunchStatusChange={setIsLaunched}
         />
 
         {/* 2. Why This App? (Vision & Narrative Progression) */}
@@ -75,7 +58,7 @@ export const App: React.FC = () => {
         <ManagementSystemSection />
 
         {/* 7. Download The App (Locked/Unlocked Platform Cards) */}
-        <DownloadSection isLaunched={isEffectiveLaunched} />
+        <DownloadSection isLaunched={isLaunched} />
 
         {/* 8. Support & Feedback + Support the Vision */}
         <SupportSection />

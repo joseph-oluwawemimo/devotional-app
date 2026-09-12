@@ -7,13 +7,11 @@ import { LAUNCH_CONFIG } from '../config/launchConfig';
 interface HeroSectionProps {
   isLaunched: boolean;
   onLaunchStatusChange: (status: boolean) => void;
-  forceLaunched: boolean;
 }
 
 export const HeroSection: React.FC<HeroSectionProps> = ({
   isLaunched,
   onLaunchStatusChange,
-  forceLaunched
 }) => {
   return (
     <section id="hero" className="hero-section hero-gradient-bg">
@@ -41,7 +39,6 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
         {/* Real-time Countdown Timer */}
         <CountdownTimer
           onStatusChange={onLaunchStatusChange}
-          forceLaunched={forceLaunched}
         />
 
         {/* Hero Actions */}
