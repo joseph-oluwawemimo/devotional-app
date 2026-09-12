@@ -1,0 +1,67 @@
+:root {
+  /* Brand Core Colors */
+  --gof-blue-950: #06152d;
+  --gof-blue-900: #0d254c;
+  --gof-blue-800: #133975;
+  --gof-blue-700: #1d4ed8;
+  --gof-blue-600: #2563eb;
+  --gof-blue-500: #3b82f6;
+  --gof-blue-400: #60a5fa;
+  --gof-blue-100: #dbeafe;
+  --gof-blue-50: #eff6ff;
+
+  /* Red Accent Palette */
+  --gof-red-900: #7f1d1d;
+  --gof-red-700: #b91c1c;
+  --gof-red-600: #dc2626;
+  --gof-red-500: #ef4444;
+  --gof-red-100: #fee2e2;
+  --gof-red-50: #fef2f2;
+
+  /* Church Heritage Accents */
+  --gof-gold-500: #f59e0b;
+  --gof-gold-400: #fbbf24;
+  --gof-gold-100: #fef3c7;
+
+  /* Neutral Slates & Whites */
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8fafc;
+  --bg-tertiary: #f1f5f9;
+  --bg-dark-hero: #0a192f;
+  --bg-dark-card: #0f2347;
+
+  --text-main: #0f172a;
+  --text-muted: #475569;
+  --text-light: #64748b;
+  --text-white: #ffffff;
+
+  --border-subtle: #e2e8f0;
+  --border-highlight: rgba(37, 99, 235, 0.2);
+
+  /* Elevation Shadows */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.07), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+  --shadow-lg: 0 10px 15px -3px rgba(13, 37, 76, 0.08), 0 4px 6px -4px rgba(13, 37, 76, 0.04);
+  --shadow-xl: 0 20px 25px -5px rgba(13, 37, 76, 0.12), 0 8px 10px -6px rgba(13, 37, 76, 0.06);
+  --shadow-2xl: 0 25px 50px -12px rgba(13, 37, 76, 0.25);
+  --shadow-glow-blue: 0 0 35px rgba(37, 99, 235, 0.35);
+  --shadow-glow-red: 0 0 35px rgba(220, 38, 38, 0.3);
+
+  /* Typography */
+  --font-sans: 'Outfit', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-serif: 'Newsreader', Georgia, Cambria, serif;
+  --font-display: 'Cinzel', serif;
+
+  /* Transitions */
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-smooth: 300ms cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-bounce: 500ms cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  /* Radius */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-xl: 24px;
+  --radius-2xl: 32px;
+  --radius-full: 9999px;
+}
