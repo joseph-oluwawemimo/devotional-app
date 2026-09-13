@@ -62,6 +62,11 @@ export const DownloadSection: React.FC<DownloadSectionProps> = ({ isLaunched }) 
                 <Lock className="w-4 h-4 shrink-0 text-red-600" />
                 <span>Download access is currently locked until official launch time.</span>
               </div>
+            ) : !LAUNCH_CONFIG.androidDownloadLink ? (
+              <div className="download-locked-notice" style={{ borderColor: '#f59e0b', background: '#fffbeb', color: '#b45309' }}>
+                <AlertCircle className="w-4 h-4 shrink-0 text-amber-600" />
+                <span>Download link is currently being updated. Please check back shortly!</span>
+              </div>
             ) : (
               <div>
                 <a

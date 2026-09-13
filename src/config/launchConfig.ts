@@ -18,8 +18,9 @@ export const LAUNCH_CONFIG = {
   appDescription: 'Daily Devotion & Manual',
   heroTagline: 'Your Daily Growth in the Word',
 
-  // Download Links
-  androidDownloadLink: 'https://github.com/joseph-oluwawemimo/GOFAMINT-Sunday-School/releases/download/v1.1.3/gofamint-sundayschool-debug.apk',
+  // Download Links (Temporarily cleared - updating shortly)
+  // Previous: 'https://github.com/joseph-oluwawemimo/GOFAMINT-Sunday-School/releases/download/v1.1.3/gofamint-sundayschool-debug.apk'
+  androidDownloadLink: '',
   iosWebAppLink: 'https://gofamint-sundayschool-devotional.vercel.app/',
 
   // Direct Contact & Support
