@@ -54,7 +54,7 @@ export const DownloadSection: React.FC<DownloadSectionProps> = ({ isLaunched }) 
             </p>
 
             <div style={{ marginBottom: '1.5rem', fontSize: '0.8125rem', color: '#64748b' }}>
-              ✓ Version 1.1.2 • Requires Android 7.0+ • ~21.9 MB
+              ✓ Version 1.1.3 • Requires Android 7.0+ • ~21.9 MB
             </div>
 
             {!isLaunched ? (
@@ -117,6 +117,18 @@ export const DownloadSection: React.FC<DownloadSectionProps> = ({ isLaunched }) 
               </div>
             ) : (
               <div>
+                <a
+                  href={LAUNCH_CONFIG.iosWebAppLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="download-action-btn ios"
+                  id="ios-open-webapp-btn"
+                  style={{ marginBottom: '1rem', textDecoration: 'none' }}
+                >
+                  <ExternalLink className="w-5 h-5" />
+                  <span>Open Web App / PWA</span>
+                </a>
+
                 {/* 1-Click Copy Link Box */}
                 <div className="copy-input-group">
                   <input
@@ -139,11 +151,11 @@ export const DownloadSection: React.FC<DownloadSectionProps> = ({ isLaunched }) 
                 <div className="ios-step-guide">
                   <div className="ios-step-item">
                     <span className="step-num">1</span>
-                    <span>Click <strong>Copy Link</strong> above</span>
+                    <span>Tap <strong>Open Web App</strong> or click <strong>Copy Link</strong></span>
                   </div>
                   <div className="ios-step-item">
                     <span className="step-num">2</span>
-                    <span>Open <strong>Google Chrome</strong> (or Safari) on your iPhone</span>
+                    <span>Open in <strong>Google Chrome</strong> (or Safari) on your iPhone</span>
                   </div>
                   <div className="ios-step-item">
                     <span className="step-num">3</span>
