@@ -54,7 +54,7 @@ export const DownloadSection: React.FC<DownloadSectionProps> = ({ isLaunched }) 
             </p>
 
             <div style={{ marginBottom: '1.5rem', fontSize: '0.8125rem', color: '#64748b' }}>
-              ✓ Version 1.1.3 • Requires Android 7.0+ • ~21.9 MB
+              ✓ Latest Official Build • Requires Android 7.0+ • Fast Direct Download
             </div>
 
             {!isLaunched ? (
