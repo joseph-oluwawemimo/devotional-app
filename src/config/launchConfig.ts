@@ -6,11 +6,11 @@
  * to the unlocked download state once this time arrives — no code redeployment required.
  */
 
-// Target launch time: 5:00 AM tomorrow (local time +01:00)
+// Target launch time: 6:00 AM (local time +01:00)
 // Format: ISO 8601 string: YYYY-MM-DDTHH:mm:ss+HH:MM
 export const LAUNCH_CONFIG = {
-  // Set to 5:00 AM tomorrow morning
-  launchTime: '2026-09-13T05:00:00+01:00',
+  // Set to 6:00 AM morning
+  launchTime: '2026-09-13T06:00:00+01:00',
 
   // App Metadata
   appName: 'GOFAMINT Sunday School',
