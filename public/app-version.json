@@ -1,0 +1,10 @@
+{
+  "versionCode": 6,
+  "versionName": "1.1.5",
+  "releaseDate": "2026-09-15",
+  "minRequiredVersionCode": 1,
+  "apkUrl": "https://devotional-app-lyart.vercel.app/gofamint-sundayschool.apk",
+  "downloadPageUrl": "https://devotional-app-lyart.vercel.app/",
+  "title": "GOFAMINT Sunday School v1.1.5",
+  "releaseNotes": "• In-app update system with direct APK download\n• Continuous (Vertical) and Page-by-page (Horizontal) Manual reading modes\n• Anchored section navigation\n• Smart Card generation from highlighted text\n• Bible reading history & search history with one-tap reopen\n• Multi-reference and abbreviation support (MK, JN, MT, etc.)\n• High-resolution PNG direct device download\n• Enhanced devotional voice reading with biblical pronunciation"
+}

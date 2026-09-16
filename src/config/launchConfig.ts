@@ -18,9 +18,9 @@ export const LAUNCH_CONFIG = {
   appDescription: 'Daily Devotion & Manual',
   heroTagline: 'Your Daily Growth in the Word',
 
-  // Download Placeholders (to be replaced by the owner)
-  androidDownloadLink: '[ANDROID_GITHUB_DOWNLOAD_LINK]',
-  iosWebAppLink: '[IOS_WEB_APP_LINK]',
+  // Download Links
+  androidDownloadLink: '/gofamint-sundayschool.apk',
+  iosWebAppLink: 'https://gofamint-sundayschool-devotional.vercel.app/',
 
   // Direct Contact & Support
   feedbackEmail: 'josephakinleye52@gmail.com',
